@@ -1,0 +1,16 @@
+/* MAIN CART */
+section{
+    .tittle-page{
+        padding: 50px 0px;
+        text-align: center;
+        margin: 0px;
+    }
+    .p-cart{
+        font-size: 30px;
+        text-align: center;
+    }
+    .p-take{
+        @extend %align-size-p;
+        margin-top: 100px;
+    }
+}

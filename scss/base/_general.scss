@@ -1,0 +1,56 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+}
+h1{
+    font-size: map-get($sizes, h1);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
+h2{
+    font-size: map-get($sizes, h2);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
+h3{
+    font-size: map-get($sizes, h3);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
+h4{
+    font-size: map-get($sizes, h4);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+    text-decoration-thickness: 0.01px;
+}
+h5{
+    font-size: map-get($sizes, h5);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
+h6{
+    font-size: map-get($sizes, h6);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
+p{
+    color: map-get($colors, primary);
+}
+hr{
+    @extend %marg-padd;
+    z-index: 1;
+    position: relative;
+}
+button:not(.open-menu):not(.close-menu):hover{
+    transition: 0.1s;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+main{
+    margin-top: 110px;
+}

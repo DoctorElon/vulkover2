@@ -1,0 +1,129 @@
+/* MAIN-INDEX */
+section{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 50px;
+    text-align: center;
+    .h1sh{
+        display: none;
+    }
+    .vulkover{
+        /* HERO */
+        max-width: 1100px;
+        width: 100%;
+        padding-bottom: 30px;
+        padding-top: 175px;
+    }
+    .p-main{
+        max-width: 1000px;
+        @extend %align-size-p;
+        margin: auto;
+    }
+    .button-shop{
+        padding: $size-buttons;
+        border-radius: $border-buttons;
+        border: none;
+        background-color: map-get($colors, button);
+        color: map-get($colors, secundary);
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-size: 16px;
+        a{
+            color: map-get($colors, secundary);
+            text-decoration: none;
+        }
+    }
+    .scroll-container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 70px;
+        .scroll-outline{
+            width: 25px;
+        }
+        .scroll-down{
+            position: absolute;
+            background-color: black;
+            width: 5px;
+            height: 6px;
+            border-radius: 100px;
+            margin-top: 5px;
+            animation: moveUpDown 1.5s infinite;
+            @keyframes moveUpDown{
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(20px)
+                }
+            }
+        }
+    }
+    .tittle-section{
+        /* OUR TOP PICKS */
+        padding: 140px 0px 30px;
+        text-align: center;
+    }
+    .container-remeras{
+        display: grid;
+        grid-template-areas:
+        "remera1 remera1"
+        "remera2 remera3";
+        .remera1{
+            grid-area: remera1;
+            padding-bottom: 5px;
+        }
+        .remera2{
+            grid-area: remera2;
+            padding-right: 2.5px;
+        }
+        .remera3{
+            grid-area: remera3;
+            padding-left: 2.5px;
+        }
+        .remera1,
+        .remera2,
+        .remera3{
+            border-radius: $border-images;
+            width: 100%;
+            margin: 0px;
+            &:hover{
+                opacity: 0.90;
+            }
+        }
+    }
+    .container-articles{
+        /* ARTICLES */
+        @extend %flex-between;
+        align-content: center;
+        margin: 0px;
+        padding: 50px 0px;
+    }
+    .product-mid{
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .tittle-article{
+        padding-top: 20px;
+    }
+    .img-article{
+        border-radius: $border-images;
+        width: 100%;
+        max-width: $size-articles;
+        &:hover{
+            transition: 0.2s;
+            transform: scale(1.05);
+            box-shadow: 1px 1px 2px rgba(126, 126, 126, 0.3);
+            cursor: pointer;
+        }
+    }
+    .final-text{
+        /* FINAL TEXT */
+        font-size: 36px;
+        font-weight: lighter;
+        padding: 100px 0px;
+        text-align: center;
+    }
+}

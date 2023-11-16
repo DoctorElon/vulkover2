@@ -1,0 +1,27 @@
+/* MAIN CONTACT */
+section{
+    .p-contact{
+        @extend %align-size-p;
+        max-width: 900px;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .container{
+        .row{
+            #form-contact{
+                .form-floating{
+                    textarea{
+                        height: 200px;
+                    }
+                }
+                #button-contact{
+                    margin-bottom: 100px;
+                    background-color: map-get($colors, button);
+                    border: none;
+                    padding: $size-buttons;
+                    border-radius: $border-buttons;
+                }
+            }
+        }
+    }
+}
